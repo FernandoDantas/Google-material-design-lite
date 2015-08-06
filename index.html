@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">		
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MATERIAL DESIGN GOOGLE</title>
+	<link rel="stylesheet" href="css/material.min.css" /> 
+<script src="js/material.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<style>
+	.mdl-cell{
+		background-color: #bbb;
+		height: 50px;
+	}
+
+	nav.mdl-navigation .mdl-badge[data-badge]:after{
+		top: 5px;
+		right: -8px;
+}
+
+@media screen and (max-width: 400px){
+	.esconde-celular{
+	display: none;
+}
+	nav.mdl-navigation .mdl-badge[data-badge]:after{		
+		right: 5px;
+}
+}
+
+@media screen and (min-width: 401px){
+	.mostra-celular{
+	display: none;
+}
+}
+
+
+
+</style>
+<body>
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		<header class="mdl-layout__header">
+			<div class="mdl-layout__header-row">
+				<span class="mdl-layout-title">Introdução</span>
+				<div class="mdl-layout-spacer"></div>
+			<nav class="mdl-navigation esconde-celular">
+				<a href="#" class="mdl-navigation__link mdl-badge" data-badge="5">Link 1</a>
+				<a href="#" class="mdl-navigation__link mdl-badge" data-badge="❤">Link 2</a>
+				<a href="#" class="mdl-navigation__link mdl-badge mdl-badge--no-background" data-badge="123">Link 3</a>
+			</nav>
+			</div>			
+		</header><!-- /header -->
+		<div class="mdl-layout__drawer">
+			<span class="mdl-layout-title">Introdução</span>
+			<nav class="mdl-navigation">
+				<a href="#" class="mdl-navigation__link">Link 1</a>
+				<a href="#" class="mdl-navigation__link">Link 2</a>
+				<a href="#" class="mdl-navigation__link">Link 3</a>
+				<a href="#" class="mdl-navigation__link">Link 4</a>
+				<div class="mostra-celular">
+					
+				<a href="#" class="mdl-navigation__link mdl-badge" data-badge="5">Link 1</a>
+				<a href="#" class="mdl-navigation__link mdl-badge" data-badge="❤">Link 2</a>
+				<a href="#" class="mdl-navigation__link mdl-badge mdl-badge--no-background" data-badge="123">Link 3</a>
+			
+				</div>
+
+			</nav>
+		</div>
+		<div class="mdl-layout__content">
+			<main>
+				<div class="mdl-grid">
+					<div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">6 (8 tablet)</div>
+					<div class="mdl-cell mdl-cell--4-col mdl-cell--6-col-tablet">4 (6 tablet)</div>
+					<div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone mdl-cell--hide-desktop">2 (4 smartphone)</div>
+					
+					
+				</div>		
+
+			</main>
+			<!--
+			<footer class="mdl-mini-footer">
+				<div class="mdl-mini-footer--right-section">
+					<div class="mdl-logo">Material design</div>
+					<ul class="mdl-mini-footer--link-list">
+						<li><a href="http://www.getmdl.io/">Site do framework</a></li>
+						<li><a href="http://www.getmdl.io/components/index.html">Componentes do framework</a></li>
+					</ul>
+				</div>
+				<div class="mdl-mini-footer--left-section">
+					<div class="mdl-logo">Material design</div>
+					<ul class="mdl-mini-footer--link-list">
+						<li><a href="http://www.getmdl.io/">Site do framework</a></li>
+						<li><a href="http://www.getmdl.io/components/index.html">Componentes do framework</a></li>
+					</ul>
+				</div>
+			</footer>-->
+			<footer class="mdl-mega-footer">
+
+				<div class="mdl-mega-footer--top-section">
+					<div class="mdl-mega-footer--drop-down-section">
+					<input type="checkbox" class="mdl-mega-footer--heading-checkbox" checked="">
+						<h1 class="mdl-mega-footer--heading">Cursos</h1>
+						<ul class="mdl-mega-footer--link-list">
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+						</ul>
+					</div>
+					<div class="mdl-mega-footer--drop-down-section">
+					<input type="checkbox" class="mdl-mega-footer--heading-checkbox" checked="">
+						<h1 class="mdl-mega-footer--heading">Empresa</h1>
+						<ul class="mdl-mega-footer--link-list">
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+						</ul>
+					</div>
+					<div class="mdl-mega-footer--drop-down-section">
+					<input type="checkbox" class="mdl-mega-footer--heading-checkbox" checked="">
+						<h1 class="mdl-mega-footer--heading">projetos</h1>
+						<ul class="mdl-mega-footer--link-list">
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+						</ul>
+					</div>
+					<div class="mdl-mega-footer--drop-down-section">
+					<input type="checkbox" class="mdl-mega-footer--heading-checkbox" checked="">
+						<h1 class="mdl-mega-footer--heading">Fale Conosco</h1>
+						<ul class="mdl-mega-footer--link-list">
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="mdl-mega-footer--middle-section">
+					
+				</div>
+
+				<div class="mdl-mega-footer--bottom-section">					
+					<div class="mdl-logo">Material design</div>
+					<ul class="mdl-mega-footer--link-list">
+						<li><a href="http://www.getmdl.io/">Site do framework</a></li>
+						<li><a href="http://www.getmdl.io/components/index.html">Componentes do framework</a></li>
+					</ul>									
+				</div>
+			</footer>
+		</div>
+	</div>
+</body>
+</html>

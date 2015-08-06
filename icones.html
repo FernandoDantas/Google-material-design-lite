@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">		
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MATERIAL DESIGN GOOGLE</title>
+	<link rel="stylesheet" href="css/material.min.css" /> 
+<script src="js/material.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<style>
+body{
+	background: #FAFAFA;
+}
+.mdl-grid{
+	min-height: 320px;
+	color: #757575 !important;
+}
+
+.background-cinza{
+	background: #eee;
+	min-height: 50px;
+}	
+
+	nav.mdl-navigation .mdl-badge[data-badge]:after{
+		top: 5px;
+		right: -8px;
+}
+
+@media screen and (max-width: 400px){
+	.esconde-celular{
+	display: none;
+}
+	nav.mdl-navigation .mdl-badge[data-badge]:after{		
+		right: 5px;
+}
+}
+
+@media screen and (min-width: 401px){
+	.mostra-celular{
+	display: none;
+}
+}
+
+.md-18{font-size: 18px;}
+.md-24{font-size: 24px;}
+.md-36{font-size: 36px;}
+.md-48{font-size: 48px;}
+.laranja{color: #fb8c00;}
+.verde{color: #A4C639;}
+
+.demonstracao-card{
+	width: 512px;
+}
+
+.demonstracao-card > .mdl-card__title{
+	color: #fff;
+	height: 176px;
+	background: url('img/card1.jpg') center / cover;
+}
+
+.demonstracao-card >.mdl-card__menu{
+	color: #fff;
+}
+
+</style>
+<body>
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		<header class="mdl-layout__header">
+			<div class="mdl-layout__header-row">
+				<span class="mdl-layout-title">Introdução</span>
+				<div class="mdl-layout-spacer"></div>
+			<nav class="mdl-navigation esconde-celular">
+				<a href="#" class="mdl-navigation__link mdl-badge" data-badge="5">Link 1</a>
+				<a href="#" class="mdl-navigation__link mdl-badge" data-badge="❤">Link 2</a>
+				<a href="#" class="mdl-navigation__link mdl-badge mdl-badge--no-background" data-badge="123">Link 3</a>
+			</nav>
+			<div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+				<label class="mdl-button mdl-js-button mdl-button--icon" for="pesquisa">
+					<i class="material-icons">search</i>
+				</label>
+				<div class="mdl-textfield__expandable-holder">
+					<input class="mdl-textfield__input" type="text" id="pesquisa">
+				</div>
+			</div>
+			</div>			
+		</header><!-- /header -->
+		<div class="mdl-layout__drawer">
+			<span class="mdl-layout-title">Introdução</span>
+			<nav class="mdl-navigation">
+				<a href="#" class="mdl-navigation__link">Link 1</a>
+				<a href="#" class="mdl-navigation__link">Link 2</a>
+				<a href="#" class="mdl-navigation__link">Link 3</a>
+				<a href="#" class="mdl-navigation__link">Link 4</a>
+				<div class="mostra-celular">
+					
+				<a href="#" class="mdl-navigation__link mdl-badge" data-badge="5">Link 1</a>
+				<a href="#" class="mdl-navigation__link mdl-badge" data-badge="❤">Link 2</a>
+				<a href="#" class="mdl-navigation__link mdl-badge mdl-badge--no-background" data-badge="123">Link 3</a>
+			
+				</div>
+
+			</nav>			
+
+		</div>
+		<div class="mdl-layout__content">
+			<main>			
+
+				<div class="mdl-grid">
+
+					<div class="mdl-cell mdl-cell--4-col">
+						<h3>Ícones</h3>
+						<div class="background-cinza">
+						<!--Os icones são encontrados no site http://www.google.com/design/icons/-->
+							<div class="material-icons md-48 verde">android</div>
+							<!--Se o icone estiver com duas palavras tem que colocar o underline-->
+							<i class="material-icons">done_all</i>
+							<span class="material-icons">pageview</span>
+							<i class="material-icons md-18">print</i>
+							<i class="material-icons md-24">room</i>
+							<i class="material-icons md-36 laranja">search</i>
+							<i class="material-icons md-48 mdl-badge" data-badge="5">thumb_up</i>
+						</div>
+					</div>
+					<div class="mdl-cell mdl-cell--4-col">
+						<h3>Botões</h3>
+						<div class="background-cinza">
+
+							<button class="mdl-button mdl-js-button mdl-button--primary">Button</button>
+							<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">Button</button>
+							<button class="mdl-button mdl-js-button" disabled>Button</button>
+
+							<button class="mdl-button mdl-js-button mdl-button--primary mdl-button--raised">Button</button>
+							<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent mdl-button--raised">Button</button>
+							<button class="mdl-button mdl-js-button mdl-button--raised" disabled>Button</button>
+
+							<button class="mdl-button mdl-js-button mdl-button--primary mdl-button--fab"><i class="material-icons">add</i></button>
+							<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent mdl-button--fab"><i class="material-icons">add</i></button>
+							<button class="mdl-button mdl-js-button mdl-button--fab" disabled><i class="material-icons">add</i></button>
+
+							<button class="mdl-button mdl-js-button mdl-button--primary mdl-button--fab mdl-button--mini-fab"><i class="material-icons">add</i></button>
+							<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent mdl-button--fab mdl-button--mini-fab"><i class="material-icons">add</i></button>
+							<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" disabled><i class="material-icons">add</i></button>
+
+							<button class="mdl-button mdl-js-button mdl-button--icon">
+								<i class="material-icons">thumb_up</i>
+							</button>
+
+							<button class="mdl-button mdl-js-button mdl-button--icon mdl-button--accent">
+								<i class="material-icons">thumb_up</i>
+							</button>
+
+							<button class="mdl-button mdl-js-button mdl-button--icon mdl-button--primary">
+								<i class="material-icons">thumb_up</i>
+							</button>
+
+							
+
+						</div>
+					</div>
+					<div class="mdl-cell mdl-cell--4-col">
+						<h3>Text Fields</h3>
+						<div class="background-cinza">
+							
+							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+								<input class="mdl-textfield__input" type="text" id="user" pattern="[A-Z,a-z, ]*">
+								<label class="mdl-textfield__label" for="user">Usuário</label>
+								<span class="mdl-textfield__error">Apenas Letras e Espaços</span>
+							</div>
+
+							<div class="mdl-textfield mdl-js-textfield">
+								<input class="mdl-textfield__input" type="text" id="user" pattern="[0-9]*">
+								<label class="mdl-textfield__label" for="user">Números</label>
+								<span class="mdl-textfield__error">Apenas Números</span>
+							</div>
+
+							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+								<textarea class="mdl-textfield__input" type="text" id="end"></textarea>
+								<label class="mdl-textfield__label" for="end">Usuário</label>								
+							</div>
+
+						</div>
+					</div>
+
+					<div class="mdl-cell mdl-cell--6-col">
+						<h3>Cards</h3>
+						<div class="background-cinza">
+
+							<div class="mdl-card mdl-shadow--2dp demonstracao-card">
+								<div class="mdl-card__title">
+									<h2 class="mdl-card__title-text">Titulo do cartão</h2>
+								</div>
+								<div class="mdl-card__supporting-text">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia unde voluptatem hic
+								</div>
+								<div class="mdl-card__actions mdl-card--border">
+									<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">Button</button>
+								</div>
+								<div class="mdl-card__menu">
+									<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons">share</i></button>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+
+					<div class="mdl-cell mdl-cell--6-col">
+						<h3>Tabelas</h3>
+						<div class="background-cinza">
+							
+						<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp mdl-data-table--selectable">
+							<thead>
+								<tr>
+									<th class="mdl-data-table__cell--non-numeric">Nome</th>
+									<th>Idade</th>
+									<th>Id</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="mdl-data-table__cell--non-numeric">João Gabriel</td>
+									<td>22</td>
+									<td>9907</td>
+								</tr>
+								<tr>
+									<td class="mdl-data-table__cell--non-numeric">Maria Aparecida Florentina</td>
+									<td>25</td>
+									<td>9988</td>
+								</tr>
+								<tr>
+									<td class="mdl-data-table__cell--non-numeric">Joana Dark dos Anjos</td>
+									<td>32</td>
+									<td>8007</td>
+								</tr>	
+								<tr>
+									<td class="mdl-data-table__cell--non-numeric">José Arimatéia Alfa</td>
+									<td>18</td>
+									<td>10400</td>
+								</tr>							
+							</tbody>
+						</table>
+
+						</div>
+					</div>
+
+				</div>
+
+			</main>
+			<!--
+			<footer class="mdl-mini-footer">
+				<div class="mdl-mini-footer--right-section">
+					<div class="mdl-logo">Material design</div>
+					<ul class="mdl-mini-footer--link-list">
+						<li><a href="http://www.getmdl.io/">Site do framework</a></li>
+						<li><a href="http://www.getmdl.io/components/index.html">Componentes do framework</a></li>
+					</ul>
+				</div>
+				<div class="mdl-mini-footer--left-section">
+					<div class="mdl-logo">Material design</div>
+					<ul class="mdl-mini-footer--link-list">
+						<li><a href="http://www.getmdl.io/">Site do framework</a></li>
+						<li><a href="http://www.getmdl.io/components/index.html">Componentes do framework</a></li>
+					</ul>
+				</div>
+			</footer>-->
+			<footer class="mdl-mega-footer">
+
+				<div class="mdl-mega-footer--top-section">
+					<div class="mdl-mega-footer--drop-down-section">
+					<input type="checkbox" class="mdl-mega-footer--heading-checkbox" checked="">
+						<h1 class="mdl-mega-footer--heading">Cursos</h1>
+						<ul class="mdl-mega-footer--link-list">
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+						</ul>
+					</div>
+					<div class="mdl-mega-footer--drop-down-section">
+					<input type="checkbox" class="mdl-mega-footer--heading-checkbox" checked="">
+						<h1 class="mdl-mega-footer--heading">Empresa</h1>
+						<ul class="mdl-mega-footer--link-list">
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+						</ul>
+					</div>
+					<div class="mdl-mega-footer--drop-down-section">
+					<input type="checkbox" class="mdl-mega-footer--heading-checkbox" checked="">
+						<h1 class="mdl-mega-footer--heading">projetos</h1>
+						<ul class="mdl-mega-footer--link-list">
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+						</ul>
+					</div>
+					<div class="mdl-mega-footer--drop-down-section">
+					<input type="checkbox" class="mdl-mega-footer--heading-checkbox" checked="">
+						<h1 class="mdl-mega-footer--heading">Fale Conosco</h1>
+						<ul class="mdl-mega-footer--link-list">
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="mdl-mega-footer--middle-section">
+					
+				</div>
+
+				<div class="mdl-mega-footer--bottom-section">					
+					<div class="mdl-logo">Material design</div>
+					<ul class="mdl-mega-footer--link-list">
+						<li><a href="http://www.getmdl.io/">Site do framework</a></li>
+						<li><a href="http://www.getmdl.io/components/index.html">Componentes do framework</a></li>
+					</ul>									
+				</div>
+			</footer>
+		</div>
+	</div>
+</body>
+</html>
